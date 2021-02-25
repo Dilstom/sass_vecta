@@ -1,0 +1,17 @@
+@mixin backImg($image, $width, $height, $pos1, $pos2) {
+    width: $width;
+    height: $height;
+    background: url($image) no-repeat $pos1 $pos2;
+}
+
+@mixin headerH($color, $font-weight, $font-size, $line-height, $margin-bottom: null) {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin socialBckg($image, $pos1, $pos2: 0) {
+    background: url($image) $pos1, $pos2;
+}

@@ -1,0 +1,29 @@
+figure {
+    @include backImg("../images/logo.png", 400px, 190px, 0, 50px);
+    float: left;
+    display: block;
+    margin: 0;
+}
+nav {
+    width: 540px;
+    height: 190px;
+    float: left;
+    text-align: right;
+     ul {
+      list-style-type: none;
+      margin-top: 95px;
+       li {
+        display: inline;
+        font-size: 0.8em;
+        margin-right: 10px;
+         a {
+          color: $red-tone1;
+          text-decoration: none;
+          letter-spacing: -0.01em;
+          &:hover {
+            color: $white;
+          }
+        }      
+      }      
+    }    
+  }

@@ -5,9 +5,7 @@ figure {
   margin: 0;
 
   @include break(959px) {
-    width: inherit;
-    height: 140px;
-    float: none;
+    @include navParts(inherit, 140px, none);
     background-position: center;
   }
   @include break(459px) {
@@ -17,17 +15,13 @@ figure {
 }
 nav {
   @include break(959px) {
-    width: inherit;
-    height: 50px;
-    float: none;
+    @include navParts(inherit, 50px, none);
     text-align: center;
   }
   @include break(459px) {
     margin-bottom: 40px !important;
   }
-  width: 540px;
-  height: 190px;
-  float: left;
+  @include navParts(540px, 190px, left);
   text-align: right;
   ul {
     @include break(959px) {

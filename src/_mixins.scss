@@ -5,6 +5,13 @@
     background: url($image) no-repeat $pos1 $pos2;
 }
 
+// navigation
+@mixin navParts($width, $height, $float) {
+    width: $width;
+    height: $height;
+    float: $float;
+}
+
 // header <h> tags
 @mixin headerH($color, $font-weight, $font-size, $line-height, $margin-bottom: null) {
     color: $color;
@@ -25,3 +32,15 @@
         @content;
     }
 }
+
+// @mixin imageGrid($qty, $margin){
+//     width: ((100% - (($qty - 1) * $margin)) / $qty);
+//     &:nth-child(n) {
+//         margin-bottom: $margin;
+//         margin-right: $margin;
+//     }
+//     &:nth-child(#{$qty}n) {
+//         margin-bottom: 0;
+//         margin-right: 0;
+//     }
+// }

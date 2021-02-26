@@ -10,4 +10,13 @@ body {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    @include break(959px) {
+      width: 768px;
+    }
+    @include break(767px) {
+      width: 460px;
+    }
+    @include break(459px) {
+      width: 300px;
+    }
   }

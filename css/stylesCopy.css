@@ -163,6 +163,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
 @media screen and (max-width: 959px) {
   main {
     width: 768px;

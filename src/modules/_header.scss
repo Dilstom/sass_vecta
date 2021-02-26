@@ -7,9 +7,27 @@ header {
   header img {
     max-width: 100%;
     height: auto;
+    @include break(767px) {
+      margin-bottom: 100px;
+    }
+    @include break(459px) {
+      margin-bottom: 80px;
+    }
   }
   header h1 {
       @include headerH($red-tone1, 100, 4em, 0);
+      @include break(959px) {
+        font-size: 3em;
+      }
+      @include break(767px) {
+        font-size: 2em;
+      }
+      &:first-child{
+        @include break(459px) {
+          font-size: 1.4em;
+          margin-bottom: 20px;
+        }
+      }
     // color: $red-tone1;
     // font-weight: 100;
     // font-size: 4em;
@@ -17,6 +35,16 @@ header {
   }
   header h2 {
     @include headerH($white, 900, 2.5em, 0, 70px);
+
+    @include break(959px) {
+      font-size: 1.5em;
+    }
+    @include break(767px) {
+      font-size: 1em;
+    }
+    @include break(459px) {
+      font-size: 1.4em;
+    }
     // color: $white;
     // font-weight: 900;
     // font-size: 2.5em;
@@ -25,6 +53,14 @@ header {
   }
   header h3 {
     @include headerH($grey, 400, 2em, 0, 50px);
+
+    @include break(767px) {
+      font-size: 1.5em;
+    }
+    @include break(459px) {
+      color: #fff;
+    font-size: 1em;
+    }
     // color: $grey;
     // font-weight: 400;
     // font-size: 2em;
